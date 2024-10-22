@@ -251,6 +251,7 @@
         height: auto;
         font-family: 'NtBau', sans-serif;
         margin-right: 50px;
+        max-width: 850px;
     }
 
     .nav-menu ul {
