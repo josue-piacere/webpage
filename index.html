@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/scripts.js"></script>
+    
     <title>Piacere</title>
 </head>
 <body>
@@ -53,13 +58,46 @@
         </div>     
     </header>
     <main>
-        <article>
-            <h1>PIACERE</h1>
-            <h3>Pasion por el diseño</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sapiente recusandae a cumque autem expedita nisi voluptatibus unde animi tempora? Sint consequuntur labore cumque? A ipsum ab non doloremque corrupti?</p>
+        <article id="presentacion">
+            <div class="presentacion-titulos" >
+                <h1>PIACERE</h1>
+                <h3>Pasion por el diseño</h3>
+            </div>
+            <div class="presentacion-parrafo">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sapiente recusandae a cumque autem expedita nisi voluptatibus unde animi tempora? Sint consequuntur labore cumque? A ipsum ab non doloremque corrupti? lorem </p>
+            </div>
         </article>
-        <article>
-            <h1>ESPACIOS PIACERE</h1>
+        <article id="showrooms">
+            <div class="showrooms-titulo">
+                <h1>ESPACIOS PIACERE</h1>
+            </div>
+            <div class="showrooms-fotos">
+                <div class="carrusel-contenedor" id="carrusel">
+                    <div class="showrooms-pedregal"></div>
+                    <div class="showrooms-reforma"></div>
+                    <div class="showrooms-cabos"></div>
+                    <div class="showrooms-reforma2"></div>
+                </div>
+                <div class="carrusel-derecha" id="siguiente">
+                    <div class="img-carrusel-derecha"></div>
+                </div>
+            </div>
+        </article>
+        <article id="frase"> 
+            <div class="frase-contenido">
+                <h4>"Frase inspiradora o citas sobre PIACERE de arquitectos reconocidos"</h4>
+            </div>
+            <div class="frase-autor">
+                <h5>Autor de la trase o cita</h5>
+            </div>
+        </article>
+        <article id="proyectos">
+            <div class="proyectos-titulo">
+                <h1>PROYECTOS DESTACADOS</h1>
+            </div>
+            <div class="proyectos-parrafo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sint voluptas a quis aliquam incidunt eaque adipisci cupiditate ullam minus? Eligendi vel molestiae nulla unde, hic quia officiis dolorum in?</p>
+            </div>
         </article>
     </main>
     <footer>
@@ -68,5 +106,4 @@
 </body>
 </html>
 
-<script src="/assets/js/scripts.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
