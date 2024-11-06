@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'NtBau';
+    src: url('../fonts/NTBauRegular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NtBau';
+    src: url('../fonts/NTBauBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NtBau';
+    src: url('../fonts/NTBauLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../fonts/AvenirNextLTW04Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../fonts/AvenirNextW05Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../fonts/AvenirNextW05UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
