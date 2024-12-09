@@ -5,6 +5,8 @@ $(document).ready(function() {
     const $btnLeft = $('.carousel-control-left');
     const $btnRight = $('.carousel-control-right');
 
+    const $logoImg = $('.navbar-logo');
+
     let currentIndex = 0;
     const totalItems = $items.length;
     const itemWidth = 100 / totalItems;
@@ -25,6 +27,10 @@ $(document).ready(function() {
             currentIndex--;
             $carouseles.css('transform', `translateX(-${itemWidth * currentIndex}%)`);
         }
+    });
+
+    $logoImg.click(function(){
+            window.location.href = "../index.html";
     });
 
 

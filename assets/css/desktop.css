@@ -46,6 +46,7 @@
         width: 130px;
         height: auto;
         object-fit: contain;
+        cursor: pointer;
     }
 
     .navbar-toggle {
