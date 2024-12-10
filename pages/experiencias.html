@@ -15,11 +15,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="/assets/js/script.js"></script>
 
-    <title>Marcas</title>
+    <title>Experiencias</title>
 
     <style>
 
-        .main-marcas {
+        .main-experiencias {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -29,7 +29,7 @@
             background: var(--nav-color);
         }
 
-        .section-marcas {
+        .section-experiencias {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -38,47 +38,64 @@
             height: auto;
         }
 
-        .marcas-title {
+        .experiencias-title {
             display: flex;
             width: 100%;
             height: auto;
             justify-content: initial;
             padding: 25px;
+            max-width: 1750px;
         }
 
-        .marcas-title h1 {
+        .experiencias-title h1 {
             font-family: var(--font-secondary);
             font-size: 28px;
-            font-weight: 400;
+            font-weight: 300;
             color: var(--text-color);
             text-align: center;
         }
-
-        .marcas-imagenes {
+        .experiencias-imagenes {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
             width: 100%;
             height: auto;
+            justify-content: center;
         }
-
-        .imagenes {
+        .experiencia-item {
             display: flex;
-            width: 50%;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            width: 100%;
             height: auto;
             justify-content: center;
             align-items: center;
-            padding: 25px;
-            max-width: 300px;
         }
-
-        .imagenes img {
+        .img-experiencia {
+            display: flex;
             width: 100%;
             height: auto;
+        }
+        .img-experiencia img {
+            width: 100%;
+            height: 500px;
             object-fit: cover;
-            max-width: 215px;
+        }
+        .text-experiencia {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 75px;
+            top: -75px;
+            padding: 25px;
+            max-width: 1750px;
+        }
+        .text-experiencia h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: #ffffff;
+            text-align: center;
         }
     </style>
 </head>
@@ -107,52 +124,93 @@
                 </div>   
             </nav>
         </header>
-        <footer class="footer">
-            <div class="showrooms-principal">
-                <div class="showroom">
-                    <img src="../assets/img/Showroom1.png" alt="showroom">
-                    <h4>PIACERE Reforma</h4>
-                    <p>Reforma 625, Lomas de Chapultepec, CDMX.</p>
-                    <h3>+52 55 52822103</h3>
+        <main class="main-experiencias">
+            <section class="section-experiencias">
+                <div class="experiencias-title">
+                    <h1>EXPERIENCIAS</h1>
                 </div>
-                <div class="showroom">
-                    <img src="../assets/img/showroom1.png" alt="showroom">
-                    <h4>PIACERE Pedregal</h4>
-                    <p>(CASA LOCKEN) Av. Picacho 420, CDMX.</p>
-                    <h3>+52 55 2589 3688</h3>
+                <div class="experiencias-imagenes">
+                    <div class="experiencia-item">
+                        <div class="img-experiencia">
+                            <img src="/assets/img/experiencias/experiencia.png" alt="experiencia">
+                        </div>
+                        <div class="text-experiencia">
+                            <h1>GASTRONOMICAS</h1>   
+                        </div>
+                    </div>
+                    <div class="experiencia-item">
+                        <div class="img-experiencia">
+                            <img src="/assets/img/experiencias/25th.png" alt="25th">
+                        </div>
+                        <div class="text-experiencia">
+                            <h1>25 ANIVERSARIO</h1>   
+                        </div>
+                    </div>
+                    <div class="experiencia-item">
+                        <div class="img-experiencia">
+                            <img src="/assets/img/experiencias/experiencia.png" alt="experiencia">
+                        </div>
+                        <div class="text-experiencia">
+                            <h1>DESING WEEK</h1>   
+                        </div>
+                    </div>
+                    <div class="experiencia-item">
+                        <div class="img-experiencia">
+                            <img src="/assets/img/experiencias/experiencia.png" alt="experiencia">
+                        </div>
+                        <div class="text-experiencia">
+                            <h1>IGNAGURACION REFORMA</h1>   
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="showrooms-secundario">
-                <div class="showroom">
-                    <img src="../assets/img/Showroom1.png" alt="showroom">
-                    <h4>PIACERE Los Cabos</h4>
-                    <p>Carretera Transpeninsular Km 25.4, Los Cabos.</p>
-                    <h3>+52 55 5520 7022</h3>
+            </section>
+            <footer class="footer">
+                <div class="showrooms-principal">
+                    <div class="showroom">
+                        <img src="../assets/img/Showroom1.png" alt="showroom">
+                        <h4>PIACERE Reforma</h4>
+                        <p>Reforma 625, Lomas de Chapultepec, CDMX.</p>
+                        <h3>+52 55 52822103</h3>
+                    </div>
+                    <div class="showroom">
+                        <img src="../assets/img/showroom1.png" alt="showroom">
+                        <h4>PIACERE Pedregal</h4>
+                        <p>(CASA LOCKEN) Av. Picacho 420, CDMX.</p>
+                        <h3>+52 55 2589 3688</h3>
+                    </div>
                 </div>
-                <div class="showroom">
-                    <img src="../assets/img/Showroom2.png" alt="showroom">
-                    <H4>PIACERE Cedis</H4>
-                    <p>Primera Cda. Nte. 147. No. 43, CDMX.</p>
-                    <h3>+52 55 5341 1040</h3>
+                <div class="showrooms-secundario">
+                    <div class="showroom">
+                        <img src="../assets/img/Showroom1.png" alt="showroom">
+                        <h4>PIACERE Los Cabos</h4>
+                        <p>Carretera Transpeninsular Km 25.4, Los Cabos.</p>
+                        <h3>+52 55 5520 7022</h3>
+                    </div>
+                    <div class="showroom">
+                        <img src="../assets/img/Showroom2.png" alt="showroom">
+                        <H4>PIACERE Cedis</H4>
+                        <p>Primera Cda. Nte. 147. No. 43, CDMX.</p>
+                        <h3>+52 55 5341 1040</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="redes-sociales">
-                <img src="../assets/img/Facebook.png" alt="Facebook">
-                <img src="../assets/img/Instagram.png" alt="Instagram">
-                <img src="../assets/img/LinkInd.png" alt="LinkInd">
-            </div>
-            <div class="links">
-                <div class="link-item">
-                    <a href="">@ piacere_mx</a>
+                <div class="redes-sociales">
+                    <img src="../assets/img/Facebook.png" alt="Facebook">
+                    <img src="../assets/img/Instagram.png" alt="Instagram">
+                    <img src="../assets/img/LinkInd.png" alt="LinkInd">
                 </div>
-                <div class="link-item">
-                    <a href="">piacere.com.mx</a>
+                <div class="links">
+                    <div class="link-item">
+                        <a href="">@ piacere_mx</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="">piacere.com.mx</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="">info@piacere.com.mx</a>
+                    </div>
                 </div>
-                <div class="link-item">
-                    <a href="">info@piacere.com.mx</a>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
