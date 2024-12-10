@@ -18,6 +18,8 @@
     <title>Showrooms</title>
 
     <style>
+
+    @media only screen and (min-width: 1025px) {
         .main-showrooms {
             position: relative;
             display: flex;
@@ -47,7 +49,7 @@
         .text-showrooms h1 {
             font-family: var(--font-secondary);
             font-size: 28px;
-            font-weight: 400;
+            font-weight: 300;
             color: var(--text-color);
         }
 
@@ -64,8 +66,8 @@
             flex-direction: column;
             width: 100%;
             height: auto;
-            padding: 25px 25px;
-            max-width: 1850px;
+            padding: 0px 25px;
+            max-width: 1800px;
         }
         .showrooms-row {
             display: flex;
@@ -73,17 +75,397 @@
             flex-wrap: wrap;
             width: 100%;
             height: auto;
+            padding: 25px 0px;
+        }
+        .showroom-left {
+            margin-right: 25px;
         }
         .showroom-gallery {
-            width: 45%;
+            width: 47.5%;
             height: auto;
-            margin: 15px 45px;
+            min-width: 465px;
         }
         .showroom-gallery img {
             width: 100%;
             height: auto;
             object-fit: cover;
         }
+
+        .showroom-gallery h1 {
+            font-family: var(--font-secondary);
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+        .section-distribuidores {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-distribuidores {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            padding: 25px 25px;
+            max-width: 1750px;
+        }
+        .text-distribuidores h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+
+        .text-distribuidores p {
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 15px 0px;
+            max-width: 900px;
+        }
+        .gallery-distribuidores {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            padding: 0px 25px;
+            max-width: 1800px;
+        }
+        .distribuidores-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            padding: 25px 0px;
+        }
+        .distribuidores-left {
+            margin-right: 25px;
+        }
+        .distribuidores-gallery {
+            width: 47.5%;
+            height: auto;
+            min-width: 465px;
+        }
+        .distribuidores-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .distribuidores-gallery h1 {
+            font-family: var(--font-secondary);
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+        .main-showrooms {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            top: 85px;
+            background: var(--nav-color);
+        }
+        .section-showrooms {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-showrooms {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            padding: 25px 25px;
+            max-width: 1750px;
+        }
+        .text-showrooms h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+
+        .text-showrooms p {
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 15px 0px;
+            max-width: 900px;
+        }
+        .gallery-showrooms {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            max-width: 1800px;
+        }
+        .showrooms-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            padding: 0px;
+        }
+        .showroom-left {
+            margin-right: 0px;
+        }
+        .showroom-gallery {
+            width: 100%;
+            height: auto;
+            min-width: 465px;
+            padding: 25px 0px;
+        }
+        .showroom-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .showroom-gallery h1 {
+            font-family: var(--font-secondary);
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--text-color);
+            margin: 0px 25px;
+        }
+        .section-distribuidores {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-distribuidores {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            padding: 25px 25px;
+            max-width: 1750px;
+        }
+        .text-distribuidores h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+
+        .text-distribuidores p {
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 15px 0px;
+            max-width: 900px;
+        }
+        .gallery-distribuidores {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            max-width: 1800px;
+        }
+        .distribuidores-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            padding: 0px;
+        }
+        .distribuidores-left {
+            margin-right: 0px;
+        }
+        .distribuidores-gallery {
+            width: 100%;
+            height: auto;
+            min-width: 465px;
+            padding: 25px 0px;
+        }
+        .distribuidores-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .distribuidores-gallery h1 {
+            font-family: var(--font-secondary);
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--text-color);
+            margin: 0px 25px;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .main-showrooms {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            top: 85px;
+            background: var(--nav-color);
+        }
+        .section-showrooms {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-showrooms {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            padding: 25px 25px;
+            max-width: 1750px;
+        }
+        .text-showrooms h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+
+        .text-showrooms p {
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 15px 0px;
+            max-width: 900px;
+        }
+        .gallery-showrooms {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            max-width: 1800px;
+        }
+        .showrooms-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            padding: 0px;
+        }
+        .showroom-left {
+            margin-right: 0px;
+        }
+        .showroom-gallery {
+            width: 100%;
+            height: auto;
+            min-width: 375px;
+            padding: 25px 0px;
+        }
+        .showroom-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .showroom-gallery h1 {
+            font-family: var(--font-secondary);
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--text-color);
+            margin: 0px 25px;
+        }
+        .section-distribuidores {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-distribuidores {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            padding: 25px 25px;
+            max-width: 1750px;
+        }
+        .text-distribuidores h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+
+        .text-distribuidores p {
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 15px 0px;
+            max-width: 900px;
+        }
+        .gallery-distribuidores {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            max-width: 1800px;
+        }
+        .distribuidores-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            padding: 0px;
+        }
+        .distribuidores-left {
+            margin-right: 0px;
+        }
+        .distribuidores-gallery {
+            width: 100%;
+            height: auto;
+            min-width: 375px;
+            padding: 25px 0px;
+        }
+        .distribuidores-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .distribuidores-gallery h1 {
+            font-family: var(--font-secondary);
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--text-color);
+            margin: 0px 25px;
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -114,7 +496,7 @@
         <main class="main-showrooms">
             <section class="section-showrooms">
                 <div class="text-showrooms">
-                    <h1>Showrooms</h1>
+                    <h1>SHOWROOMS</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure ducimus sunt hic tempore saepe corporis explicabo similique suscipit porro atque odit dicta architecto, ratione iste amet quisquam ullam soluta!
                     </p>
@@ -138,6 +520,23 @@
                         <div class="showroom-gallery">
                             <img src="../assets/img/showrooms/loscabos.png" alt="loscabos">
                             <h1>LOS CABOS</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-distribuidores">
+                <div class="text-distribuidores">
+                    <h1>DISTRIBUIDORES</h1>
+                </div>
+                <div class="gallery-distribuidores">
+                    <div class="distribuidores-row">
+                        <div class="distribuidores-gallery distribuidores-left">
+                            <img src="../assets/img/showrooms/pedregal.png" alt="osso">
+                            <h1>OSSO FORNITURE Gdl.</h1>
+                        </div>
+                        <div class="distribuidores-gallery">
+                            <img src="../assets/img/showrooms/reforma625.png" alt="eurofirma">
+                            <h1>EUROFIRMA Mty.</h1>
                         </div>
                     </div>
                 </div>

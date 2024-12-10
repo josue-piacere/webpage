@@ -18,7 +18,8 @@
     <title>Marcas</title>
 
     <style>
-
+    
+    @media only screen and (min-width: 1025px) {
         .main-marcas {
             position: relative;
             display: flex;
@@ -28,7 +29,6 @@
             top: 85px;
             background: var(--nav-color);
         }
-
         .section-marcas {
             display: flex;
             flex-direction: column;
@@ -36,8 +36,8 @@
             align-items: center;
             width: 100%;
             height: auto;
+            max-width: 1750px;
         }
-
         .marcas-title {
             display: flex;
             width: 100%;
@@ -45,41 +45,338 @@
             justify-content: initial;
             padding: 25px;
         }
-
         .marcas-title h1 {
             font-family: var(--font-secondary);
             font-size: 28px;
-            font-weight: 400;
+            font-weight: 300;
             color: var(--text-color);
             text-align: center;
         }
-
         .marcas-imagenes {
             display: flex;
             flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-evenly;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
             width: 100%;
             height: auto;
         }
-
+        .marcas-row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .mid-row-marcas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+            height: auto;
+        }
+        .imagenes {
+            display: flex;
+            width: 45%;
+            height: auto;
+            justify-content: initial;
+            align-items: center;
+            padding: 25px;
+            max-width: 300px;
+            aspect-ratio: 2 / 1;
+        }
+        .imagenes img {
+            width: 100%;
+            height: 55%;
+            object-fit: contain;
+            max-width: 175px;
+        }
+        .section-alianzas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 125px 0px;
+            max-width: 1750px;
+        }
+        .alianzas-title {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 25px;
+        }
+        .alianzas-title h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .alianzas-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .alianzas-row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: initial;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+        .main-marcas {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            top: 85px;
+            background: var(--nav-color);
+        }
+        .section-marcas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            max-width: 1750px;
+        }
+        .marcas-title {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 25px;
+        }
+        .marcas-title h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .marcas-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .marcas-row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .mid-row-marcas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
         .imagenes {
             display: flex;
             width: 50%;
             height: auto;
-            justify-content: center;
+            justify-content: initial;
             align-items: center;
             padding: 25px;
             max-width: 300px;
+            aspect-ratio: 2 / 1;
         }
-
         .imagenes img {
             width: 100%;
-            height: auto;
-            object-fit: cover;
-            max-width: 215px;
+            height: 55%;
+            object-fit: contain;
+            max-width: 200px;
         }
+        .section-alianzas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 125px 0px;
+            max-width: 1750px;
+        }
+        .alianzas-title {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 25px;
+        }
+        .alianzas-title h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .alianzas-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .alianzas-row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: initial;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .main-marcas {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            top: 85px;
+            background: var(--nav-color);
+        }
+        .section-marcas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            max-width: 1750px;
+        }
+        .marcas-title {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 25px;
+        }
+        .marcas-title h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .marcas-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            min-width: 375px;
+        }
+        .marcas-row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .mid-row-marcas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .imagenes {
+            display: flex;
+            width: 50%;
+            height: auto;
+            justify-content: initial;
+            align-items: center;
+            padding: 25px;
+            max-width: 300px;
+            aspect-ratio: 2 / 1;
+        }
+        .imagenes img {
+            width: 100%;
+            height: 55%;
+            object-fit: contain;
+            max-width: 200px;
+        }
+        .section-alianzas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 125px 0px;
+            max-width: 1750px;
+        }
+        .alianzas-title {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 25px;
+        }
+        .alianzas-title h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .alianzas-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .alianzas-row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: initial;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+    }
     </style>
 </head>
 <body>
@@ -110,55 +407,99 @@
         <main class="main-marcas">
             <section class="section-marcas">
                 <div class="marcas-title">
-                    <h1>Marcas</h1>
+                    <h1>MARCAS</h1>
                 </div>
                 <div class="marcas-imagenes">
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Arclinea.png" alt="Arclinea">
+                    <div class="marcas-row">
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Poliform.png" alt="Poliform">
+                            </div>
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Arclinea.png" alt="Arclinea">
+                            </div>
+                        </div>
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Agape.png" alt="Agape">
+                            </div>
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Cassina.png" alt="Cassina">
+                            </div>
+                        </div>
                     </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Poliform.png" alt="Poliform">
+                    <div class="marcas-row">
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Agapecasa.png" alt="Agapecasa">
+                            </div>
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Kettal.png" alt="Kettal">
+                            </div>
+                        </div>
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Gandiblasco.png" alt="Gandiblasco">
+                            </div>
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/PaolaLenti.png" alt="PaolaLenti">
+                            </div>
+                        </div>
                     </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Agape.png" alt="Agape">
+                    <div class="marcas-row">
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/LivingDivani.png" alt="LivingDivani">
+                            </div>
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Manimarquina.png" alt="Manimarquina">
+                            </div>
+                        </div>
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Antoniolupi.png" alt="Antoniolupi">
+                            </div>
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/GAN.png" alt="GAN">
+                            </div>
+                        </div>
                     </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Cassina.png" alt="Cassina">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Agapecasa.png" alt="Agapecasa">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Kettal.png" alt="Kettal">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Gandiblasco.png" alt="Agapecasa">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/PaolaLenti.png" alt="PaolaLenti">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/LivingDivani.png" alt="LivingDivani">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Manimarquina.png" alt="Manimarquina">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Antoniolupi.png" alt="Antoniolupi">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/GAN.png" alt="GAN">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/e15.png" alt="e15">
-                    </div>
-                    <div class="imagenes">
-                        <img src="../assets/img/marcas/Cor.png" alt="Cor">
+                    <div class="marcas-row">
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/e15.png" alt="e15">
+                            </div>
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Cor.png" alt="Cor">
+                            </div>
+                        </div>
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/LaPalma.png" alt="LaPalma">
+                            </div>
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/TecnoGrafica.png" alt="TecnoGrafica">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="section-alianzas">
-
+                <div class="alianzas-title">
+                    <h1>ALIANZAS</h1>
+                </div>
+                <div class="alianzas-imagenes">
+                    <div class="alianzas-row">
+                        <div class="mid-row-marcas">
+                            <div class="imagenes">
+                                <img src="../assets/img/marcas/Venster.png" alt="Venster">
+                            </div>
+                            <div class="imagenes">
+                                <img src="" alt="perilbango">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <footer class="footer">
                 <div class="showrooms-principal">
