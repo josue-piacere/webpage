@@ -129,6 +129,7 @@
         width: 100%;
         top: calc(100vh + 85px);
         background: var(--secondary-color);
+        overflow: hidden;
     }
 
     .intro-section {
