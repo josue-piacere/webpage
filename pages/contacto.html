@@ -15,11 +15,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="/assets/js/script.js"></script>
 
-    <title>Marcas</title>
+    <title>Contacto</title>
 
     <style>
-
-        .main-marcas {
+    @media only screen and (min-width: 1025px) {
+        .main-contacto {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -29,7 +29,7 @@
             background: var(--nav-color);
         }
 
-        .section-marcas {
+        .section-contacto {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -38,48 +38,500 @@
             height: auto;
         }
 
-        .marcas-title {
+        .contacto-title {
             display: flex;
             width: 100%;
             height: auto;
             justify-content: initial;
             padding: 25px;
+            max-width: 1750px;
         }
 
-        .marcas-title h1 {
+        .contacto-title h1 {
             font-family: var(--font-secondary);
             font-size: 28px;
             font-weight: 400;
             color: var(--text-color);
             text-align: center;
         }
-
-        .marcas-imagenes {
+        .contacto {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 15px 25px;
+            max-width: 1750px;
+        }
+
+        .parrafo-contacto {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            max-width: 750px;
+        }
+        .parrafo-contacto p {
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 200;
+            color: var(--text-color);
+        }
+        .form-contacto {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: end;
+            padding: 50px 0px;
+        }
+        .form-contacto form {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            height: auto;
+            max-width: 650px;
+        }
+        .row-contacto {
+            display: flex;
+            flex-wrap: nowrap;
             flex-direction: row;
+            justify-content: initial;;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 25px 0px;
+        }
+        .form-nombre input {
+            width: 45%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-pais input {
+            width: 100%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-mail input {
+            width: 100%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-check {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: center;
-            width: 100%;
-            height: auto;
+            width: 50%;
+            margin: 0px 2.5%;
         }
 
-        .imagenes {
+        .form-check label {
             display: flex;
-            width: 50%;
-            height: auto;
+            flex-direction: column;
+            width: 90%;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+        .form-check input {
+            width: 10%;
+            height: 15px;
+        }
+        .form-mensaje input {
+            width: 100%;
+            height: 150px;
+            margin: 0px 2.5%;
+            border: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        button {
+            width: 25%;
+            height: 35px;
+            margin: 25px 2.5%;
+            border: none;
+            background-color: #3a3a3a;
+            color: white;
+            font-family: var(--font-secondary);
+            font-size: 16px;
+            font-weight: 400;
+        }    
+    }
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+        .main-contacto {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            top: 85px;
+            background: var(--nav-color);
+        }
+
+        .section-contacto {
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 25px;
-            max-width: 300px;
-        }
-
-        .imagenes img {
             width: 100%;
             height: auto;
-            object-fit: cover;
-            max-width: 215px;
         }
+
+        .contacto-title {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 25px;
+            max-width: 1750px;
+        }
+
+        .contacto-title h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .contacto {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 15px 25px;
+            max-width: 1750px;
+        }
+
+        .parrafo-contacto {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            max-width: 750px;
+        }
+        .parrafo-contacto p {
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 200;
+            color: var(--text-color);
+        }
+        .form-contacto {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 50px 0px;
+        }
+        .form-contacto form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+        }
+        .row-contacto {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: initial;;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 25px 0px;
+        }
+        .form-nombre input {
+            width: 45%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-pais input {
+            width: 100%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-mail input {
+            width: 100%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-check {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 50%;
+            margin: 0px 2.5%;
+        }
+
+        .form-check label {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+        .form-check input {
+            width: 10%;
+            height: 15px;
+        }
+        .form-mensaje input {
+            width: 100%;
+            height: 150px;
+            margin: 0px 2.5%;
+            border: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        button {
+            width: 25%;
+            height: 35px;
+            margin: 25px 2.5%;
+            border: none;
+            background-color: #3a3a3a;
+            color: white;
+            font-family: var(--font-secondary);
+            font-size: 16px;
+            font-weight: 400;
+        } 
+    }
+    @media only screen and (max-width: 480px) {
+        .main-contacto {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            top: 85px;
+            background: var(--nav-color);
+        }
+
+        .section-contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            min-width: 375px;
+        }
+
+        .contacto-title {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 25px;
+            max-width: 1750px;
+        }
+
+        .contacto-title h1 {
+            font-family: var(--font-secondary);
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--text-color);
+            text-align: center;
+        }
+        .contacto {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 15px 25px;
+            max-width: 1750px;
+        }
+
+        .parrafo-contacto {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            max-width: 750px;
+        }
+        .parrafo-contacto p {
+            font-family: var(--font-secondary);
+            font-size: 18px;
+            font-weight: 200;
+            color: var(--text-color);
+        }
+        .form-contacto {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: initial;
+            padding: 50px 0px;
+        }
+        .form-contacto form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            max-width: 650px;
+        }
+        .row-contacto {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: initial;;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 25px 0px;
+        }
+        .form-nombre input {
+            width: 45%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-pais input {
+            width: 100%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-mail input {
+            width: 100%;
+            height: 35px;
+            margin: 0px 2.5%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        .form-check {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 50%;
+            margin: 0px 2.5%;
+        }
+
+        .form-check label {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+        }
+        .form-check input {
+            width: 10%;
+            height: 15px;
+        }
+        .form-mensaje input {
+            width: 100%;
+            height: 150px;
+            margin: 0px 2.5%;
+            border: solid 2px #d6d6d6;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-color);
+            padding: 0px 15px;
+        }
+        button {
+            width: 25%;
+            height: 35px;
+            margin: 25px 2.5%;
+            border: none;
+            background-color: #3a3a3a;
+            color: white;
+            font-family: var(--font-secondary);
+            font-size: 16px;
+            font-weight: 400;
+        } 
+    }
     </style>
 </head>
 <body>
@@ -107,52 +559,98 @@
                 </div>   
             </nav>
         </header>
-        <footer class="footer">
-            <div class="showrooms-principal">
-                <div class="showroom">
-                    <img src="../assets/img/Showroom1.png" alt="showroom">
-                    <h4>PIACERE Reforma</h4>
-                    <p>Reforma 625, Lomas de Chapultepec, CDMX.</p>
-                    <h3>+52 55 52822103</h3>
+        <main class="main-contacto">
+            <section class="section-contacto">
+                <div class="contacto-title">
+                    <h1>CONTÁCTENOS</h1>
                 </div>
-                <div class="showroom">
-                    <img src="../assets/img/showroom1.png" alt="showroom">
-                    <h4>PIACERE Pedregal</h4>
-                    <p>(CASA LOCKEN) Av. Picacho 420, CDMX.</p>
-                    <h3>+52 55 2589 3688</h3>
+                <div class="contacto">
+                    <div class="parrafo-contacto">
+                        <p>Si tiene preguntas sobre nuestras exhibiciones o sobre la empresa, rellene este formulario con su solicitud. Le responderemos lo más pronto posible.</p>
+                    </div>
+                    <div class="form-contacto">
+                        <form action="">
+                            <div class="row-contacto form-nombre">
+                                <input type="text" placeholder="Nombre">
+                                <input type="text" placeholder="Apellido">         
+                            </div>
+                            <div class="row-contacto form-pais">
+                                <input type="text" placeholder="Pais">
+                            </div>
+                            <div class="row-contacto  form-mail">
+                                <input type="text" placeholder="Correo electronico">
+                            </div>
+                            <div class="row-contacto">
+                                <div class="form-check">
+                                    <input type="checkbox">
+                                    <label for="">Soy un consumidor</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox">
+                                    <label for="">Soy un profesional <i>Sector del diseño arquitectonico</i></label>
+                                </div>
+                            </div>
+                            <div class="row-contacto">
+                                <div class="form-check">
+                                    <input type="checkbox">
+                                    <label for="">Suscribirme a newsletter</label>
+                                </div>
+                            </div>
+                            <div class="row-contacto form-mensaje">
+                                <input type="text" placeholder="Mensaje">
+                            </div>
+                            <button type="submit">ENVIAR</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="showrooms-secundario">
-                <div class="showroom">
-                    <img src="../assets/img/Showroom1.png" alt="showroom">
-                    <h4>PIACERE Los Cabos</h4>
-                    <p>Carretera Transpeninsular Km 25.4, Los Cabos.</p>
-                    <h3>+52 55 5520 7022</h3>
+            </section>
+            <footer class="footer">
+                <div class="showrooms-principal">
+                    <div class="showroom">
+                        <img src="../assets/img/Showroom1.png" alt="showroom">
+                        <h4>PIACERE Reforma</h4>
+                        <p>Reforma 625, Lomas de Chapultepec, CDMX.</p>
+                        <h3>+52 55 52822103</h3>
+                    </div>
+                    <div class="showroom">
+                        <img src="../assets/img/showroom1.png" alt="showroom">
+                        <h4>PIACERE Pedregal</h4>
+                        <p>(CASA LOCKEN) Av. Picacho 420, CDMX.</p>
+                        <h3>+52 55 2589 3688</h3>
+                    </div>
                 </div>
-                <div class="showroom">
-                    <img src="../assets/img/Showroom2.png" alt="showroom">
-                    <H4>PIACERE Cedis</H4>
-                    <p>Primera Cda. Nte. 147. No. 43, CDMX.</p>
-                    <h3>+52 55 5341 1040</h3>
+                <div class="showrooms-secundario">
+                    <div class="showroom">
+                        <img src="../assets/img/Showroom1.png" alt="showroom">
+                        <h4>PIACERE Los Cabos</h4>
+                        <p>Carretera Transpeninsular Km 25.4, Los Cabos.</p>
+                        <h3>+52 55 5520 7022</h3>
+                    </div>
+                    <div class="showroom">
+                        <img src="../assets/img/Showroom2.png" alt="showroom">
+                        <H4>PIACERE Cedis</H4>
+                        <p>Primera Cda. Nte. 147. No. 43, CDMX.</p>
+                        <h3>+52 55 5341 1040</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="redes-sociales">
-                <img src="../assets/img/Facebook.png" alt="Facebook">
-                <img src="../assets/img/Instagram.png" alt="Instagram">
-                <img src="../assets/img/LinkInd.png" alt="LinkInd">
-            </div>
-            <div class="links">
-                <div class="link-item">
-                    <a href="">@ piacere_mx</a>
+                <div class="redes-sociales">
+                    <img src="../assets/img/Facebook.png" alt="Facebook">
+                    <img src="../assets/img/Instagram.png" alt="Instagram">
+                    <img src="../assets/img/LinkInd.png" alt="LinkInd">
                 </div>
-                <div class="link-item">
-                    <a href="">piacere.com.mx</a>
+                <div class="links">
+                    <div class="link-item">
+                        <a href="">@ piacere_mx</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="">piacere.com.mx</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="">info@piacere.com.mx</a>
+                    </div>
                 </div>
-                <div class="link-item">
-                    <a href="">info@piacere.com.mx</a>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </main>
     </div>
 </body>
 </html>
