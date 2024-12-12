@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    const $regresar = $('.regresar-showrooms');
+
+    const $IrReforma1 = $('.btn-reforma615');
+
     const $carouseles = $('.carousel-items');
     const $items = $('.carousel-item');
     const $btnLeft = $('.carousel-control-left');
@@ -33,6 +37,13 @@ $(document).ready(function() {
             window.location.href = "../index.html";
     });
 
+    $regresar.click(function(){
+        window.location.href = "../showrooms.html";
+    });
+
+    $IrReforma1.click(function(){
+        window.location.href = "./showrooms/reforma615.html";
+    });
 
     $('#toggle').click(function() {
         $(".navbar-links").toggleClass("navbar-open");
