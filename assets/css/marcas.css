@@ -1,0 +1,360 @@
+@import url('./global/styles.css');
+@import url('./global/fonts.css');
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
+
+@media only screen and (min-width: 1025px) {
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        top: 85px;
+        background: var(--nav-color);
+    }
+    .section-marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        max-width: 1750px;
+    }
+    .marcas-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: initial;
+        padding: 25px;
+    }
+    .marcas-title h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .marcas-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .marcas-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .mid-row-marcas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: auto;
+    }
+    .imagenes {
+        display: flex;
+        width: 45%;
+        height: auto;
+        justify-content: initial;
+        align-items: center;
+        padding: 25px;
+        max-width: 300px;
+    }
+    .imagenes img {
+        width: 100%;
+        height: 55%;
+        object-fit: cover;
+        max-width: 275px;
+    }
+    .section-alianzas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 125px 0px;
+        max-width: 1750px;
+    }
+    .alianzas-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: initial;
+        padding: 25px;
+    }
+    .alianzas-title h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .alianzas-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .alianzas-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        top: 85px;
+        background: var(--nav-color);
+    }
+    .section-marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        max-width: 1750px;
+    }
+    .marcas-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: initial;
+        padding: 25px;
+    }
+    .marcas-title h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .marcas-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .marcas-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .mid-row-marcas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .imagenes {
+        display: flex;
+        width: 50%;
+        height: auto;
+        justify-content: initial;
+        align-items: center;
+        padding: 25px;
+        max-width: 300px;
+    }
+    .imagenes img {
+        width: 100%;
+        height: 55%;
+        object-fit: cover;
+        max-width: 275px;
+    }
+    .section-alianzas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 125px 0px;
+        max-width: 1750px;
+    }
+    .alianzas-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: initial;
+        padding: 25px;
+    }
+    .alianzas-title h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .alianzas-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .alianzas-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 480px) {
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        top: 85px;
+        background: var(--nav-color);
+    }
+    .section-marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        max-width: 1750px;
+    }
+    .marcas-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: initial;
+        padding: 25px;
+    }
+    .marcas-title h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .marcas-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        min-width: 375px;
+    }
+    .marcas-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .mid-row-marcas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .imagenes {
+        display: flex;
+        width: 50%;
+        height: auto;
+        justify-content: initial;
+        align-items: center;
+        padding: 25px;
+        max-width: 300px;
+    }
+    .imagenes img {
+        width: 100%;
+        height: 55%;
+        object-fit: cover;
+        max-width: 225px;
+    }
+    .section-alianzas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 125px 0px;
+        max-width: 1750px;
+    }
+    .alianzas-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: initial;
+        padding: 25px;
+    }
+    .alianzas-title h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .alianzas-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .alianzas-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+}
