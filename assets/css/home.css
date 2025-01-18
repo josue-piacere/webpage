@@ -1,0 +1,574 @@
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
+
+
+@media only screen and (max-width: 480px) {
+
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .media-wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .video-wrapper {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    
+    .video-wrapper  iframe {
+        position: absolute;
+        width: 100vw;
+        height: calc(100vw / 2.35);
+        top: 50%;
+        left: 50%;
+        min-height: 100vh;
+        min-width: calc(100vh * 2.35);
+        transform: translate(-50%, -50%);
+    }
+    .text-introduction {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 375px;
+        background-color: var(--secondary-color);
+    }
+
+    .container-section {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction{
+        padding: 75px 25px;
+    }
+
+    .introduction p {
+        text-align: center;
+        font-size: 14px;
+        color: var(--text-color);
+        font-family: var(--font-primary);
+        font-weight: 100;
+        min-width: 315px;
+        max-width: 315px;
+    }
+
+    .showrooms-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 375px;
+        background-color: var(--secondary-color);
+    }
+
+    .control-spaces-left {
+        display: none;
+    }
+
+    .control-spaces-right {
+        display: none;
+    }
+
+    .spaces-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0px 25px;
+        margin-bottom: 50px;
+    }
+
+    .title-section-spaces {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
+        height: auto;
+    }
+
+    .title-section-spaces h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 400;
+        color: var(--text-color);
+        width: 80%;
+    }
+
+    .carousel-spaces-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        min-width: none;
+    }
+
+    .carousel-control-left {
+        background: none;
+        border: none;
+        width: 25px;
+    }
+
+    .carousel-control-right {
+        background: none;
+        border: none;
+        width: 25px;
+    }
+
+    .carousel-control-right img {
+        width: 15px;
+        height: 25px;
+    }
+    .carousel-control-left img {
+        width: 15px;
+        height: 25px;
+    }
+
+    .carousel-spaces-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start !important;
+        width: 100%;
+        overflow: hidden;
+        padding: 25px 0px;
+    }
+
+    .carousel-spaces-items {
+        display: flex;
+        flex-direction: row !important;
+        width: 400%;
+        height: 100%;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-spaces-item {
+        width: calc(100% / 4);
+        height: 100%;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .carousel-spaces-item img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 2 / 1;
+        top: 50%;
+        left: 50%;
+        object-position: bottom;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1150px) {
+
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .media-wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .video-wrapper {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    
+    .video-wrapper  iframe {
+        position: absolute;
+        width: 100vw;
+        height: calc(100vw / 2.35);
+        top: 50%;
+        left: 50%;
+        min-height: 100vh;
+        min-width: calc(100vh * 2.35);
+        transform: translate(-50%, -50%);
+    }
+
+    .text-introduction {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 375px;
+        background-color: var(--secondary-color);
+    }
+
+    .container-section {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction{
+        padding: 75px 25px;
+    }
+
+    .introduction p {
+        text-align: center;
+        font-size: 14px;
+        color: var(--text-color);
+        font-family: var(--font-primary);
+        font-weight: 100;
+        min-width: 345px;
+        max-width: 600px;
+    }
+
+    .showrooms-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 375px;
+        background-color: var(--secondary-color);
+    }
+
+    .control-spaces-left {
+        display: none;
+    }
+
+    .control-spaces-right {
+        display: none;
+    }
+
+    .spaces-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0px 25px;
+        margin-bottom: 50px;
+    }
+
+    .title-section-spaces {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
+        height: auto;
+    }
+
+    .title-section-spaces h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 400;
+        color: var(--text-color);
+        width: 80%;
+    }
+
+    .carousel-spaces-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        min-width: 100px;
+        max-width: 75px;
+    }
+
+    .carousel-control-left {
+        background: none;
+        border: none;
+        width: 25px;
+    }
+
+    .carousel-control-right {
+        background: none;
+        border: none;
+        width: 25px;
+    }
+
+    .carousel-control-right img {
+        width: 15px;
+        height: 25px;
+    }
+    .carousel-control-left img {
+        width: 15px;
+        height: 25px;
+    }
+
+    .carousel-spaces-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start !important;
+        width: 100%;
+        overflow: hidden;
+        padding: 25px 0px;
+    }
+
+    .carousel-spaces-items {
+        display: flex;
+        flex-direction: row !important;
+        width: 400%;
+        height: 100%;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-spaces-item {
+        width: calc(100% / 4);
+        height: 100%;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .carousel-spaces-item img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 2 / 1;
+        top: 50%;
+        left: 50%;
+        object-position: bottom;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .media-wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .video-wrapper {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    
+    .video-wrapper  iframe {
+        position: absolute;
+        width: 100vw;
+        height: calc(100vw / 2.35);
+        top: 50%;
+        left: 50%;
+        min-height: 100vh;
+        min-width: calc(100vh * 2.35);
+        transform: translate(-50%, -50%);
+    }    
+
+    .text-introduction {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 375px;
+        background-color: var(--secondary-color);
+    }
+
+    .container-section {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction{
+        padding: 150px 25px;
+    }
+
+    .introduction p {
+        text-align: center;
+        font-size: 14px;
+        color: var(--text-color);
+        font-family: var(--font-primary);
+        font-weight: 100;
+        min-width: 345px;
+        max-width: 1000px;
+    }
+
+    .showrooms-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 375px;
+        background-color: var(--secondary-color);
+    }
+
+    .control-spaces-left {
+        display: flex;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+
+    .control-spaces-right {
+        display: flex;
+        margin-right: 35px;
+        cursor: pointer;
+    }
+
+    .spaces-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0px 25px;
+        margin-bottom: 50px;
+        max-width: 1350px;
+    }
+
+    .title-section-spaces {
+        display: none;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
+        height: auto;
+    }
+
+    .title-section-spaces h1 {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        font-weight: 400;
+        color: var(--text-color);
+        width: 80%;
+    }
+
+    .carousel-spaces-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        min-width: 100px;
+        max-width: 75px;
+    }
+
+    .carousel-control-left {
+        background: none;
+        border: none;
+        width: 25px;
+    }
+
+    .carousel-control-right {
+        background: none;
+        border: none;
+        width: 25px;
+    }
+
+    .carousel-control-right img {
+        width: 15px;
+        height: 25px;
+    }
+    .carousel-control-left img {
+        width: 15px;
+        height: 25px;
+    }
+
+    .carousel-spaces-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start !important;
+        width: 100%;
+        overflow: hidden;
+        padding: 25px 0px;
+    }
+
+    .carousel-spaces-items {
+        display: flex;
+        flex-direction: row !important;
+        width: 400%;
+        height: 100%;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-spaces-item {
+        width: calc(100% / 4);
+        height: 100%;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .carousel-spaces-item img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 2 / 1;
+        top: 50%;
+        left: 50%;
+        object-position: bottom;
+    }
+}
+
+
+

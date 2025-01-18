@@ -1,0 +1,281 @@
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        background-color: var(--secondary-color);
+    }
+
+    .marcas-title {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: initial;
+        width: 100%;
+        max-width: 1350px;
+        padding: 25px;
+        z-index: 1;
+        margin-top: 75px;
+    }
+
+    .marcas-title h1 {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+    }
+
+    .marcas-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 650px;
+        padding: 25px;
+        z-index: 1;
+    }
+
+    .marcas-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .marcas-colum {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .marca {
+        display: flex;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: center;
+        width: 50%;
+        max-width: 225px;
+        height: auto;
+    }
+
+    .marca  img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        aspect-ratio: 2 / 1;
+    }
+
+    .marca a {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 50px 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        background-color: var(--secondary-color);
+    }
+
+    .marcas-title {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: initial;
+        width: 100%;
+        max-width: 1350px;
+        padding: 25px;
+        z-index: 1;
+        margin-top: 75px;
+    }
+
+    .marcas-title h1 {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+    }
+
+    .marcas-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 650px;
+        padding: 25px;
+        z-index: 1;
+    }
+
+    .marcas-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .marcas-colum {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .marca {
+        display: flex;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: center;
+        width: 50%;
+        max-width: 225px;
+        height: auto;
+    }
+
+    .marca  img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        aspect-ratio: 2 / 1;
+    }
+
+    .marca a {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 50px 0px;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        background-color: var(--secondary-color);
+    }
+
+    .marcas-title {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: initial;
+        width: 100%;
+        max-width: 1350px;
+        padding: 25px;
+        z-index: 1;
+        margin-top: 75px;
+    }
+
+    .marcas-title h1 {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+    }
+
+    .marcas-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: initial;
+        width: 100%;
+        max-width: 1350px;
+        padding: 25px;
+        z-index: 1;
+    }
+
+    .marcas-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .marcas-colum {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: auto;
+    }
+
+    .marca {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: auto;
+    }
+
+    .marca  img {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        aspect-ratio: 2 / 1;
+    }
+
+    .marca a {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 50px 0px;
+    }
+}
