@@ -111,3 +111,11 @@
     </footer>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        $('.showroom').click(function(){
+            window.location.href = $(this).find('a').attr('href');
+        });
+    });
+</script>

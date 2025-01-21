@@ -66,6 +66,7 @@
         align-items: center;
         width: 100%;
         height: auto;
+        max-width: 1350px;
     }
 
     .row-gallery {
