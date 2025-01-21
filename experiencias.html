@@ -18,6 +18,23 @@
     <title>Experiencias</title>
 </head>
 <body>
+    <div class="image-complete deactive-background">
+        <div class="image-experiencias deactive-gallery">
+            <img src="/assets/images/experiencias/experiencias1.png" alt="experiencias1" id="img1">
+        </div>
+        <div class="image-experiencias deactive-gallery">
+            <img src="/assets/images/experiencias/experiencias2.png" alt="experiencias1" id="img2">
+        </div>
+        <div class="image-experiencias deactive-gallery">
+            <img src="/assets/images/experiencias/experiencias3.png" alt="experiencias1" id="img3">
+        </div>
+        <div class="image-experiencias deactive-gallery">
+            <img src="/assets/images/experiencias/experiencias4.png" alt="experiencias1" id="img4">
+        </div>
+        <div class="image-experiencias deactive-gallery">
+            <img src="/assets/images/experiencias/experiencias5.png" alt="experiencias1" id="img5">
+        </div>
+    </div>
     <header>
         <nav class="navbar">
             <div class="navbar-container">
@@ -53,26 +70,26 @@
                 <div class="gallery-row">
                     <div class="gallery-colum">
                         <div class="gallery-image" id="hrz">
-                            <img src="./assets/images/experiencias/experiencias1.png" alt="experiencias1">
+                            <img src="./assets/images/experiencias/experiencias1.png" alt="experiencias1" id="exp1" class="exp-img">
                         </div>
                         <div class="gallery-image image-mov">
-                            <img src="./assets/images/experiencias/experiencias2.png" alt="experiencias2">
+                            <img src="./assets/images/experiencias/experiencias2.png" alt="experiencias2" id="exp2" class="exp-img">
                         </div>
                     </div>
                 </div>
                 <div class="gallery-row">
                     <div class="gallery-colum">
                         <div class="gallery-image">
-                            <img src="./assets/images/experiencias/experiencias3.png" alt="experiencias3">
+                            <img src="./assets/images/experiencias/experiencias3.png" alt="experiencias3" id="exp3" class="exp-img">
                         </div>
                         <div class="gallery-image">
-                            <img src="./assets/images/experiencias/experiencias4.png" alt="experiencias4">
+                            <img src="./assets/images/experiencias/experiencias4.png" alt="experiencias4" id="exp4" class="exp-img">
                         </div>
                         <div class="gallery-image">
-                            <img src="./assets/images/experiencias/experiencias5.png" alt="experiencias5">
+                            <img src="./assets/images/experiencias/experiencias5.png" alt="experiencias5" id="exp5" class="exp-img">
                         </div>
                         <div class="gallery-image image-desk">
-                            <img src="./assets/images/experiencias/experiencias2.png" alt="experiencias2">
+                            <img src="./assets/images/experiencias/experiencias2.png" alt="experiencias2" id="exp2" class="exp-img">
                         </div>
                     </div>
                 </div>
@@ -96,3 +113,59 @@
     </footer>
 </body>
 </html>
+
+<script>
+
+    $(document).ready(function(){
+        $('.exp-img').click(function(){
+
+            console.log($(this));
+
+            var img = $(this).attr('id');
+            var imgComplete = "";
+
+            // Corregir el switch comparando con los valores correctos (como strings)
+            switch (img) {
+                case "exp1":
+                    imgComplete = "img1";
+                    break;
+                case "exp2":
+                    imgComplete = "img2";
+                    break;
+                case "exp3":
+                    imgComplete = "img3";
+                    break;
+                case "exp4":
+                    imgComplete = "img4";
+                    break;
+                case "exp5":
+                    imgComplete = "img5";
+                    break;
+                default:
+                    console.log("No match found");
+                    return; // Salir si no hay coincidencia
+            }
+
+            if (imgComplete === "") {
+                return;
+            }
+
+            // Mostrar la imagen completa y ocultar las demás
+            $('.image-complete').removeClass('deactive-background');
+            $('.image-experiencias').each(function(){
+                if ($(this).find('img').attr('id') === imgComplete) {
+                    $(this).removeClass('deactive-gallery').addClass('active-gallery');
+                } else {
+                    $(this).removeClass('active-gallery').addClass('deactive-gallery');
+                }
+            });
+        });
+
+        // Cerrar la vista de pantalla completa al hacer clic en la imagen completa
+        $('.image-complete').click(function(){
+            $(this).addClass('deactive-background');
+            $('.image-experiencias').removeClass('active-gallery').addClass('deactive-gallery');
+        });
+    });
+
+</script>

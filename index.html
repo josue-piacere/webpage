@@ -107,3 +107,29 @@
     </footer>
 </body>
 </html>
+
+<script>
+    
+    const texts = document.querySelectorAll('.text-introduction p');
+
+    function checkVisibility() {
+        const scrollPosition = window.scrollY + window.innerHeight;
+
+        texts.forEach(text => {
+            const textPosition = text.offsetTop;
+
+            if (scrollPosition > textPosition) {
+                text.classList.add('visible');
+            } else {
+                text.classList.remove('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+
+    window.addEventListener('scroll', updateScrollPosition);
+    updateScrollPosition();
+
+</script>
