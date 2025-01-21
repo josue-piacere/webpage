@@ -1,6 +1,223 @@
 @import url('../components/navbar.css');
 @import url('../components/footer.css');
 
+@media only screen and (max-width: 480px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        background-color: var(--secondary-color);
+    }
+
+    .title-eurofirma {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: initial;
+        width: 100%;
+        height: auto;
+        margin-top: 75px;
+        padding: 25px;
+        max-width: 1350px;
+    }
+
+    .title-eurofirma h1 {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+    }
+
+    .eurofirma-return {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 50px 25px;
+        max-width: 1350px;
+        cursor: pointer;
+    }
+
+    .eurofirma-return h3 {
+        font-size: 16px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+        margin: 0px 25px;
+    }
+
+    .eurofirma-return img {
+        width: 20px;
+    }
+
+    .eurofirma-gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        max-width: 1350px;
+    }
+
+    .row-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .eurofirma-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .eurofirma-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        padding: 5px;
+    }
+
+    .image-1 {
+        width: 100%;
+    }
+
+    .image-2 {
+        width: 50%;
+    }
+
+    .image-3 {
+        width: 50%;
+    }
+
+    .image-4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1150px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        background-color: var(--secondary-color);
+    }
+
+    .title-eurofirma {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: initial;
+        width: 100%;
+        height: auto;
+        margin-top: 75px;
+        padding: 25px;
+        max-width: 1350px;
+    }
+
+    .title-eurofirma h1 {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+    }
+
+    .eurofirma-return {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 50px 25px;
+        max-width: 1350px;
+        cursor: pointer;
+    }
+
+    .eurofirma-return h3 {
+        font-size: 16px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+        margin: 0px 25px;
+    }
+
+    .eurofirma-return img {
+        width: 20px;
+    }
+
+    .eurofirma-gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        max-width: 1350px;
+    }
+
+    .row-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .eurofirma-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .eurofirma-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        padding: 10px;
+    }
+
+    .image-1 {
+        width: 100%;
+    }
+
+    .image-2 {
+        width: 50%;
+    }
+
+    .image-3 {
+        width: 50%;
+    }
+
+    .image-4 {
+        width: 100%;
+    }
+}
 
 @media only screen and (min-width: 1150px) {
 
