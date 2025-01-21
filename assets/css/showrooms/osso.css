@@ -1,0 +1,134 @@
+@import url('../components/navbar.css');
+@import url('../components/footer.css');
+
+
+@media only screen and (min-width: 1150px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        background-color: var(--secondary-color);
+    }
+
+    .title-osso {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: initial;
+        width: 100%;
+        height: auto;
+        margin-top: 75px;
+        padding: 25px;
+        max-width: 1350px;
+    }
+
+    .title-osso h1 {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+    }
+
+    .osso-return {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 50px 25px;
+        max-width: 1350px;
+        cursor: pointer;
+    }
+
+    .osso-return h3 {
+        font-size: 16px;
+        font-weight: 300;
+        font-family: var(--font-secondary);
+        color: var(--text-color);
+        margin: 0px 25px;
+    }
+
+    .osso-return img {
+        width: 20px;
+    }
+
+    .osso-gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .row-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .osso-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .osso-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        padding: 15px;
+    }
+
+    .image-1 {
+        width: 50%;
+    }
+
+    .image-2 {
+        width: 25%;
+    }
+
+    .image-3 {
+        width: 25%;
+    }
+
+    .image-4 {
+        width: 100%;
+    }
+    .image-5 {
+        width: 100%;
+    }
+
+    .image-6 {
+        width: 25%;
+    }
+
+    .image-7 {
+        width: 25%;
+    }
+
+    .image-8 {
+        width: 50%;
+    }
+
+    .image-9 {
+        width: 50%;
+    }
+
+    .image-10 {
+        width: 50%;
+    }
+}

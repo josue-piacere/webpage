@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="/assets/js/components/navbar.js"></script>
-    <script src="/assets/js/scripts.js"></script>
+    
     <title>Pedregal</title>
 </head>
 <body>
@@ -91,3 +91,21 @@
     </footer>
 </body>
 </html>
+
+<script>
+    $(document).ready(function() {
+    
+        // Return to showrooms
+        $('.pedregal-return').click(function() {
+            window.location.href = '../showrooms.html';
+        });
+
+         // Return to home
+        const $logoImg = $('.navbar-logo');
+
+        $logoImg.click(function(){
+            window.location.href = "../index.html";
+        });
+
+    });
+</script>

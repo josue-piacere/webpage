@@ -41,8 +41,9 @@
         align-items: center;
         width: 100%;
         height: auto;
-        padding: 25px;
+        padding: 50px 25px;
         max-width: 1350px;
+        cursor: pointer;
     }
 
     .pedregal-return h3 {
