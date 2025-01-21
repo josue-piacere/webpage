@@ -141,7 +141,7 @@
         align-items: center;
         width: 90%;
         border-top: solid 0.5px black;
-        max-width: 1350px;
+        margin: 25px 0px;
     }
 
     .redes-sociales {

@@ -384,7 +384,14 @@
         object-fit: cover;
         object-position: center;
         cursor: pointer;
+        transition: all 0.5s ease;
     }
+
+    .showroom img:hover {
+        transform: scale(1.01);
+    }
+
+
 
     .showroom a {
         font-size: 18px;

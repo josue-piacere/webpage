@@ -203,6 +203,11 @@
         object-fit: cover;
         object-position: center;
         aspect-ratio: 1 / 1;
+        transition: all 0.5s ease;
+    }
+
+    .gallery-image img:hover {
+        transform: scale(1.03);
     }
     
     .image-desk{
@@ -315,6 +320,12 @@
         object-fit: cover;
         object-position: center;
         aspect-ratio: 1 / 1;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+
+    .gallery-image img:hover {
+        transform: scale(1.03);
     }
 
     #hrz{
