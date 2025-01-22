@@ -53,6 +53,7 @@
     
     .navbar-logo img {
         width: 120px;
+        cursor: pointer;
     }
     
     .navbar-toggle {
@@ -169,6 +170,7 @@
     
     .navbar-logo img {
         width: 120px;
+        cursor: pointer;
     }
     
     .navbar-toggle {
@@ -286,6 +288,7 @@
     
     .navbar-logo img {
         width: 120px;
+        cursor: pointer;
     }
     
     .navbar-toggle {
