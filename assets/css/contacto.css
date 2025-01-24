@@ -57,7 +57,7 @@
         color: var(--text-color);
         font-family: var(--font-secondary);
         padding: 0px 25px;
-        font-weight: 100;
+        font-weight: 300;
         max-width: 850px;
         text-align: initial;
     }
@@ -297,7 +297,7 @@
         color: var(--text-color);
         font-family: var(--font-secondary);
         padding: 0px 25px;
-        font-weight: 100;
+        font-weight: 300;
         max-width: 850px;
         text-align: initial;
     }
@@ -537,7 +537,7 @@
         color: var(--text-color);
         font-family: var(--font-secondary);
         padding: 0px 25px;
-        font-weight: 100;
+        font-weight: 300;
         max-width: 850px;
     }
 

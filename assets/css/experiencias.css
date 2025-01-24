@@ -88,7 +88,7 @@
         color: var(--text-color);
         font-family: var(--font-secondary);
         padding: 0px 25px;
-        font-weight: 100;
+        font-weight: 300;
         text-align: center;
     }
     
@@ -234,7 +234,7 @@
         color: var(--text-color);
         font-family: var(--font-secondary);
         padding: 0px 25px;
-        font-weight: 100;
+        font-weight: 300;
         text-align: center;
     }
     
@@ -386,7 +386,7 @@
         color: var(--text-color);
         font-family: var(--font-secondary);
         padding: 0px 25px;
-        font-weight: 100;
+        font-weight: 300;
         text-align: center;
     }
     

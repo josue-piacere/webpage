@@ -73,7 +73,7 @@
         font-size: 14px;
         color: var(--text-color);
         font-family: var(--font-primary);
-        font-weight: 100;
+        font-weight: 300;
         min-width: 315px;
         max-width: 315px;
     }
@@ -261,7 +261,7 @@
         font-size: 14px;
         color: var(--text-color);
         font-family: var(--font-primary);
-        font-weight: 100;
+        font-weight: 300;
         min-width: 345px;
         max-width: 600px;
     }
@@ -449,7 +449,7 @@
         font-size: 14px;
         color: var(--text-color);
         font-family: var(--font-primary);
-        font-weight: 100;
+        font-weight: 300;
         min-width: 345px;
         max-width: 1000px;
         opacity: 0;
