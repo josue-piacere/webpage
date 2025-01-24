@@ -233,7 +233,7 @@
         font-weight: 300;
         font-family: var(--font-secondary);
         color: var(--text-color);
-        max-width: 225px;
+        max-width: 255px;
         text-decoration: none;
         padding-top: 5px;
         text-align: initial;
@@ -473,7 +473,7 @@
         font-weight: 300;
         font-family: var(--font-secondary);
         color: var(--text-color);
-        max-width: 225px;
+        max-width: 255px;
         text-decoration: none;
         padding-top: 5px;
         text-align: initial;
@@ -547,7 +547,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 55%;
+        width: 50%;
         height: auto;
         max-width: 752.5px;
         padding: 25px;
@@ -650,9 +650,8 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 45%;
+        width: 50%;
         height: auto;
-        max-width: 607.5px;
         padding: 25px;
     }
 
@@ -712,7 +711,7 @@
         font-weight: 300;
         font-family: var(--font-secondary);
         color: var(--text-color);
-        max-width: 225px;
+        max-width: 255px;
         text-decoration: none;
         padding-top: 5px;
     }
