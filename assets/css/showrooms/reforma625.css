@@ -98,26 +98,34 @@
     }
 
     .image-2 {
-        width: 50%;
+        width: 100%;
     }
 
     .image-3 {
-        width: 50%;
+        width: 100%;
     }
 
     .image-4 {
-        width: 75%;
+        width: 50%;
     }
 
     .image-5 {
-        width: 25%;
+        width: 50%;
     }
 
     .image-6 {
-        width: 25%;
+        width: 75%;
     }
 
     .image-7 {
+        width: 25%;
+    }
+
+    .image-8 {
+        width: 25%;
+    }
+
+    .image-9 {
         width: 75%;
     }
 }
@@ -219,26 +227,34 @@
     }
 
     .image-2 {
-        width: 50%;
+        width: 100%;
     }
 
     .image-3 {
-        width: 50%;
+        width: 100%;
     }
 
     .image-4 {
-        width: 75%;
+        width: 50%;
     }
 
     .image-5 {
-        width: 25%;
+        width: 50%;
     }
 
     .image-6 {
-        width: 25%;
+        width: 75%;
     }
 
     .image-7 {
+        width: 25%;
+    }
+
+    .image-8 {
+        width: 25%;
+    }
+
+    .image-9 {
         width: 75%;
     }
 }
