@@ -4,7 +4,7 @@
 @media only screen and (max-width: 480px) {
 
     .image-complete {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -150,7 +150,7 @@
 @media only screen and (min-width: 481px) and (max-width: 1150px) {
 
     .image-complete {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -302,7 +302,7 @@
 @media only screen and (min-width: 1150px) {
 
     .image-complete {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: row;
         justify-content: center;
