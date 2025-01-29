@@ -88,7 +88,7 @@
                             <input type="text" name="mensaje" id="mensaje">
                         </div>
                         <div class="form-row">
-                            <button type="submit">ENVIAR</button>
+                            <button>ENVIAR</button>
                         </div>
                     </form>
                 </div>
@@ -144,7 +144,7 @@
             </div> 
             <div class="container-contacto desk-form">
                 <div class="form-contacto">
-                    <form>
+                    <form action="https://formspree.io/f/xzzdrnnv" method="POST">
                         <div class="form-row">
                             <div class="form-colum">
                                 <input type="text" placeholder="Nombre" name="nombre" id="nombre">
@@ -207,26 +207,3 @@
     </footer>
 </body>
 </html>
-
-<script>
-
-    document.querySelector("form").addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        emailjs.init("1emGwamNs8q1WD38c");
-
-        const fromName = document.getElementById("nombre").value;
-        const message = document.getElementById("mensaje").value;
-
-        emailjs.send("service_kr7fk7d", "template_c7ispm4", {
-            from_name: fromName,  
-            message: message     
-        }, "1emGwamNs8q1WD38c")
-        .then((response) => {
-            console.log("Correo enviado con éxito", response);
-        })
-        .catch((error) => {
-            console.error("Error al enviar el correo", error);
-        });
-    });
-</script>
