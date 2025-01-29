@@ -39,4 +39,20 @@ $(document).ready(function() {
             $carouseles.css('transform', `translateX(-${itemWidth * currentIndex}%)`);
         }
     });
+
+
+    var $topButton = $(".top");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 600) {
+            $topButton.css("opacity", "1");
+        } else {
+            $topButton.css("opacity", "0");
+        }
+    });
+
+    $topButton.click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+    });
+
 });
