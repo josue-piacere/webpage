@@ -44,7 +44,7 @@ $(document).ready(function() {
     var $topButton = $(".top");
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 600) {
+        if ($(this).scrollTop() > 700) {
             $topButton.css("opacity", "1");
         } else {
             $topButton.css("opacity", "0");
