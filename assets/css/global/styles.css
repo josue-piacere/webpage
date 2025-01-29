@@ -74,9 +74,17 @@
         margin-right: 25px;
     }
     
-    .cube-float img {
-        width: 40px;
-        height: 40px;
+    .cube-float {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #0c2377;
+        box-shadow: 1px 2px 3px #202020;
+        pointer-events: auto;
+        margin-right: 25px;
     }
     
     .top {
@@ -85,9 +93,20 @@
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
     }
+
+    .top img {
+        width: 60px;
+        height: 60px;
+        margin-top: 1px;
+    }
     
     .contact {
         margin-bottom: 25px;
+    }
+
+    .contact img {
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -130,9 +149,17 @@
         margin-right: 25px;
     }
     
-    .cube-float img {
-        width: 40px;
-        height: 40px;
+    .cube-float {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #0c2377;
+        box-shadow: 1px 2px 3px #202020;
+        pointer-events: auto;
+        margin-right: 25px;
     }
     
     .top {
@@ -141,9 +168,20 @@
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
     }
+
+    .top img {
+        width: 60px;
+        height: 60px;
+        margin-top: 1px;
+    }
     
     .contact {
         margin-bottom: 25px;
+    }
+
+    .contact img {
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -186,20 +224,26 @@
         margin-right: 50px;
     }
     
-    .cube-float img {
-        width: 40px;
-        height: 40px;
-    }
-    
     .top {
         display: flex;
         margin-bottom: 95px;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
     }
+
+    .top img {
+        width: 60px;
+        height: 60px;
+        margin-top: 1px;
+    }
     
     .contact {
         margin-bottom: 25px;
+    }
+
+    .contact img {
+        width: 45px;
+        height: 45px;
     }
 }
 
