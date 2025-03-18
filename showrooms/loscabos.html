@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/global/styles.css">
+    <link rel="stylesheet" href="../assets/css/showrooms/loscabos.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="/assets/js/components/navbar.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    
+    <title>Los cabos</title>
+</head>
+<body>
+    <div class="container-contact">
+        <div class="contact-wrapper">
+            <div class="contact cube-float">
+                <img src="../assets/images/contact.png" alt="contact">
+            </div>
+            <div class="top cube-float">
+                <img src="../assets/images/top.png" alt="top">
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-mob">
+                    <div class="navbar-logo">
+                        <img src="../assets/images/home/LogotipoNegro.png" alt="logo">
+                    </div>
+                    <div class="navbar-toggle">
+                        <img src="../assets/images/home/Menu.png" alt="menu" id="toggle">
+                    </div>
+                </div>
+                <div class="navbar-links">
+                    <ul class="navbar-list">
+                        <li><a href="../nosotros.html">NOSOTROS</a></li>
+                        <li><a href="../showrooms.html">SHOWROOMS</a></li>
+                        <li><a href="..marcas.html">MARCAS</a></li>
+                        <li><a href="../experiencias.html">EXPERIENCIAS</a></li>
+                        <li><a href="../contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="title-cabos">
+            <h1>LOS CABOS</h1>
+        </div>
+        <div class="cabos-return">
+            <img src="../assets/images/showrooms/pedregal/atras.png" alt="izquierda">
+            <h3>VOLVER A SHOWROOMS</h3>
+        </div>
+        <div class="cabos-gallery">
+            <div class="row-gallery">
+                <div class="cabos-image image-1">
+                    <img src="../assets/images/showrooms/loscabos/entrada.png" alt="imagen">
+                </div>
+            </div>
+            <div class="row-gallery">
+                <div class="cabos-image image-2">
+                    <img src="../assets/images/showrooms/loscabos/cocina1.png" alt="imagen">
+                </div>
+            </div>
+            <div class="row-gallery">
+                <div class="cabos-image image-3">
+                    <img src="../assets/images/showrooms/loscabos/cocina2.png" alt="imagen">
+                </div>
+                <div class="cabos-image image-4">
+                    <img src="../assets/images/showrooms/loscabos/silla.png" alt="imagen">
+                </div>
+            </div>
+            <div class="row-gallery">
+                <div class="cabos-image image-5">
+                    <img src="../assets/images/showrooms/loscabos/sofa2.png" alt="imagen">
+                </div>
+            </div>
+            <div class="row-gallery">
+                <div class="cabos-image image-6">
+                    <img src="../assets/images/showrooms/loscabos/sofa.png" alt="imagen">
+                </div>
+                <div class="cabos-image image-7">
+                    <img src="../assets/images/showrooms/loscabos/espejos.png" alt="imagen">
+                </div>
+                <div class="cabos-image image-8">
+                    <img src="../assets/images/showrooms/loscabos/sala.png" alt="imagen">
+                </div>
+            </div>
+            <div class="row-gallery">
+                <div class="cabos-image image-9">
+                    <img src="../assets/images/showrooms/loscabos/tina.png" alt="imagen">
+                </div>
+                <div class="cabos-image image-10">
+                    <img src="../assets/images/showrooms/loscabos/lateral.png" alt="imagen">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="end-space"></section>
+    <footer>
+        <div class="container-footer">
+            <div class="redes-sociales">
+                <img src="../assets/images/home/Facebook.png" alt="">
+                <img src="../assets/images/home/Instagram.png" alt="">
+                <img src="../assets/images/home/LinkInd.png" alt="">
+            </div>
+            <div class="links-footer">
+                <a href="">@piacere_mx</a>
+                <a href="">piacere.com.mx</a>
+                <a href="">info@piacere.com.mx</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    $(document).ready(function() {
+    
+        // Return to showrooms
+        $('.cabos-return').click(function() {
+            window.location.href = '../showrooms.html';
+        });
+
+         // Return to home
+        const $logoImg = $('.navbar-logo');
+
+        $logoImg.click(function(){
+            window.location.href = "../index.html";
+        });
+
+    });
+</script>
