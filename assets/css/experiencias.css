@@ -145,6 +145,37 @@
         aspect-ratio: 2 / 1 !important;
         width: 100%;
     }
+
+    .mov-rows {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        top: 35px;
+        max-width: 1250px;
+        margin: 20px 0;
+    }
+
+    .control-spaces-left{
+        width: 35px;
+    }
+
+    .control-spaces-right{
+        width: 35px;
+    }
+
+    .control-spaces-left img {
+        width: 15px;
+        height: 30px;
+    }
+
+    .control-spaces-right img {
+        width: 15px;
+        height: 30px;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1150px) {
@@ -296,6 +327,38 @@
         aspect-ratio: 2 / 1 !important;
         width: 100%;
     }
+
+    .mov-rows {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        top: 35px;
+        max-width: 1250px;
+        margin: 20px 0;
+    }
+
+    .control-spaces-left{
+        width: 35px;
+    }
+
+    .control-spaces-right{
+        width: 35px;
+    }
+
+    .control-spaces-left img {
+        width: 15px;
+        height: 30px;
+    }
+
+    .control-spaces-right img {
+        width: 15px;
+        height: 30px;
+    }
+
 
 }
 
@@ -450,4 +513,64 @@
         width: 100%;
     }
 
+
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1450px)  {
+
+    .mov-rows {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        top: 35px;
+        max-width: 1250px;
+        margin: 20px 0;
+    }
+
+    .control-spaces-left{
+        width: 35px;
+    }
+
+    .control-spaces-right{
+        width: 35px;
+    }
+
+    .control-spaces-left img {
+        width: 15px;
+        height: 30px;
+    }
+
+    .control-spaces-right img {
+        width: 15px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+
+    .mov-rows {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        max-width: 1450px;
+    }
+
+
+    .control-spaces-left img {
+        width: 15px;
+        height: 30px;
+    }
+
+    .control-spaces-right img {
+        width: 15px;
+        height: 30px;
+    }
 }
